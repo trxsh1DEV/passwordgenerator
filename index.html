@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <section class="password-option">
+      <h1>Gerador de senha</h1>
+      <span>Tamanho <span id="valor">8</span> caracteres</span>
+      <input type="range" name="slider" id="slider" value="8" min="0" max="30">
+      <!-- <input type="range" name="vol" value="0" min="0" max="50" oninput="display.value=value"
+                onchange="display.value=value">
+                <input type="text" id="display" value="0" readonly> -->
+
+
+      <div class="fields-optionals" data-id="uppercase">Letras Maiusculas
+        <div class="toggle-wrapper">
+          <label class="switch">
+            <input type="checkbox" class="hidden-toggle" id="uppercase" />
+            <div class="slider">
+              <div class="button"></div>
+            </div>
+          </label>
+          <!-- <div class="description">
+                        NOTIFICATIONS
+                      </div> -->
+        </div>
+      </div>
+      <div class="fields-optionals" data-id="lowercase">Letras Minusculas
+        <div class="toggle-wrapper">
+          <label class="switch">
+            <input type="checkbox" class="hidden-toggle" id="lowercase" />
+            <div class="slider">
+              <div class="button"></div>
+            </div>
+          </label>
+          <!-- <div class="description">
+                        NOTIFICATIONS
+                      </div> -->
+        </div>
+      </div>
+
+      <div class="fields-optionals" data-id="number">Números
+        <div class="toggle-wrapper">
+          <label class="switch">
+            <input type="checkbox" class="hidden-toggle" id="number" />
+            <div class="slider">
+              <div class="button"></div>
+            </div>
+          </label>
+          <!-- <div class="description">
+                        NOTIFICATIONS
+                      </div> -->
+        </div>
+      </div>
+      <div class="fields-optionals" data-id="symbol">Sinais/Simbolos
+        <div class="toggle-wrapper">
+          <label class="switch">
+            <input type="checkbox" class="hidden-toggle" id="symbol" />
+            <div class="slider">
+              <div class="button"></div>
+            </div>
+          </label>
+          <!-- <div class="description">
+                        NOTIFICATIONS
+                      </div> -->
+        </div>
+      </div>
+
+
+      <a id="btn-generate" href="#" style="--clr: #1e9bff"><span>Gerar</span><i></i></a>
+
+      <div class="password-box">
+        <span onclick="copyPassword()"></span>
+        <span class="copy">copy</span><ion-icon name="document-text" class="icons" onclick="copyPassword()"></ion-icon>
+      </div>
+
+    </section>
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/main.js"></script>
+</body>
+
+</html>
